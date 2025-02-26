@@ -60,7 +60,7 @@ Combinando ambos pasos en un solo script:
 
 ```sql
 -- Inicia una transacción para asegurar la atomicidad
-BEGIN TRANSACTION;
+START TRANSACTION;
 
 -- Actualiza la cuenta 123 (débito $50)
 UPDATE account
@@ -89,7 +89,7 @@ COMMIT;
 ### Explicación
 
 1. **Gestión de Transacciones**:
-    - `BEGIN TRANSACTION;`: Inicia una transacción para asegurar que todos los cambios se apliquen de manera atómica.
+    - `START TRANSACTION;`: Inicia una transacción para asegurar que todos los cambios se apliquen de manera atómica.
     - `COMMIT;`: Confirma la transacción, haciendo todos los cambios permanentes.
 
 2. **Actualizar la Tabla `account`**:
