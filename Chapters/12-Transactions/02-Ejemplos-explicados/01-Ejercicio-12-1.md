@@ -22,7 +22,7 @@ Primero, actualiza el `avail_balance` de ambas cuentas para reflejar la transfer
 
 ```sql
 -- Inicia una transacción para asegurar la atomicidad
-BEGIN TRANSACTION;
+START TRANSACTION;
 
 -- Actualiza la cuenta 123 (débito $50)
 UPDATE account
